@@ -3,7 +3,7 @@ const clearAll = document.querySelector(".clear-all");
 const colorList = document.querySelector(".all-colors");
 const pickedColors = JSON.parse(localStorage.getItem("picked-colors") || "[]");
 
-// Copying the color code to the clipboard and updating the element text
+// Copying the color code to the clipboard 
 const copyColor = (elem) => {
     elem.innerText = "Copied";
     navigator.clipboard.writeText(elem.dataset.color);
